@@ -6,4 +6,5 @@ FROM faculties AS f
          INNER JOIN main.marks m on s.id = m.student_id
          INNER JOIN main.faculties f2 on f2.id = s.faculty_id
          INNER JOIN main.subjects s2 on s2.id = m.subject_id
+        WHERE title = 'Theatre manager'
 GROUP BY f.name, title;

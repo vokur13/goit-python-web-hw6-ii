@@ -2,4 +2,4 @@
 
 SELECT p.last_name, p.first_name, s.title
 FROM professors AS p
-         LEFT JOIN main.subjects s on p.id = s.professor_id;
+         LEFT JOIN main.subjects s on p.id = s.professor_id WHERE p.id=1;
